@@ -1,0 +1,62 @@
+
+.tarjeta{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(235, 212, 255);
+    margin: 0px;
+    padding: 3px;
+}
+button{
+    background-color: rgb(194, 158, 244);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 250px;
+}
+
+.centrar{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-items: center;
+}
+.horizontal {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 50px
+}
+
+
+.vertical {
+    display: block;
+}
+
+.imagenBanner {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.animal {
+    width:  350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.iconos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}

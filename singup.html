@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="Anonymous"></script>    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="Anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>PARCIAL</title>
+</head>
+<body>
+    <header>
+        <h4>Nombre de la empresa</h4>
+    </header>
+    
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Noticias</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="admin.html">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="singup.html">Sing up</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">Mision</a></li>
+            <li><a class="dropdown-item" href="about.html">Vision</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="equipo.html">Equipo</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" id="buscar" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit" onclick="mostrarConsola()">Buscador</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="centrar">
+    <h4> Ingresar los datos para registrar</h4>
+    <div class="horizontal">
+    <label for="Nombres">Nombres:</label>
+    <input type="text" placeholder="Nombres" id="nombres" name="nombres">
+    <label for="Apellidos">Apellidos:</label>
+    <input type="text" placeholder="Apellidos" id="apellidos" name="apellidos">
+    </div>
+
+    <div class="horizontal">
+    <label for="Email">Email:</label>
+    <input type="email" placeholder="Email" id="email" name="email">
+    <label for="Telefono">Telefono:</label>
+    <input type="tel" placeholder="Telefono" id="telefono" name="telefono">
+    </div>
+
+    <div class="horizontal">
+        <label for="Estrato">Estrato :</label>
+        <input type="number" min="1" max="5" placeholder="Estrato" id="estrato" name="estrato">
+        <label for="Fecha de nacimiento">Fecha de nacimiento :</label>
+        <input type="date" placeholder="Fecha de nacimiento" id="fecha" name="fecha">
+        <label for="Grupo sanguineo">Grupo sanguineo :</label>
+        <select name="Grupo sangguineo" id="grupo_sanguineo">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+    </div>  
+
+    <div class="horizontal">
+       <label>Género:</label>
+       <div class="vetical">
+        <input type="radio" id="masculino" name="genero" value="Masculino"> 
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino">Femenino</label>
+       </div>
+       
+    <label for="deporte">Actividades favoritas: </label><br/>
+    <div class ="vertical">
+       <label for="futbol">futbol</label>
+       <input type="checkbox" name="deporte" id="futbol" value="1" /><br>
+       <label for="baloncesto">baloncesto</label>
+       <input type="checkbox" name="deporte" id="baloncesto" value="2" /><br>
+       <label for="voleibol">voleibol</label>
+       <input type="checkbox" name="deporte" id="voleibol" value="3" /><br>
+       <label for="ciclismo">ciclismo</label>
+       <input type="checkbox" name="deporte" id="ciclismo" value="4" /><br>
+      </div>
+    </div>
+
+
+    <button onclick="mostrarEnConsola()">Log in</button>
+    <a href="admin.html"><button>Cancelar</button></a>
+
+</div>
+
+</body>
+</html>

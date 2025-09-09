@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="Anonymous"></script>    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="Anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>PARCIAL</title>
+</head>
+<body>
+
+    <header>
+        <h4>Nombre de la empresa</h4>
+    </header>
+    
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Noticias</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="admin.html">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="singup.html">Sing up</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">Mision</a></li>
+            <li><a class="dropdown-item" href="about.html">Vision</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="equipo.html">Equipo</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" id="buscar" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit" onclick="mostrarConsola()">Buscador</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<br>
+
+<div class="tarjeta">
+    <div class="card" style="width: 18rem;">
+  <img src="imagenes/purina.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Purina con precio elevado</h5>
+    <p class="card-text">Texto sobre la noticia de la purina: Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="https://www.telemundo.com/noticias/noticias-telemundo/salud/denuncias-en-redes-sociales-afirman-que-el-alimento-de-purina-enferma-rcna134557" target="_blank"><button>Ir</button></a>
+  </div></div>
+  <div class="card" style="width: 18rem;">
+  <img src="imagenes/canastafamiliar.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Canasta familiar</h5>
+    <p class="card-text">Canasta familiar: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, itaque.Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="https://www.eltiempo.com/noticias/canasta-familiar" target="_blank"><button>Ir</button></a>
+
+  </div></div>
+  <div class="card" style="width: 18rem;">
+  <img src="imagenes/animalrefujio.avif" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Refugio de animales</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique mollitia rerum deserunt iste neque recusandae, facilis itaque provident saepe odio?Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="https://www.eltiempo.com/noticias/refugio-de-animales" target="_blank"><button>Ir</button></a>
+</div>
+</div>
+</div>
+
+<br><br>
+
+<div class="tarjeta">
+    <h4>Otras paginas de noticias</h4>
+    <div>
+        <h3>NACIONALES</h3>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bogota</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.eltiempo.com/?gad_source=1&gad_campaignid=22644653515&gbraid=0AAAAACb_j2XqTiM0jt7pDyTvHgeIPrw4V&gclid=Cj0KCQjwoP_FBhDFARIsANPG24OPPd3o2mxTG8-nhYrBqrZ3cPcRBTNbNHZW-Qre9X0xYnWybreL0AUaAlizEALw_wcB" target="_blank">El tiempo</a></li>
+            <li><a class="dropdown-item" href="https://www.elespectador.com/" target="_blank">El espectador</a></li>
+          </ul>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Neiva</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.lanacion.com.co/" target="_blank">La nacion</a></li>
+            <li><a class="dropdown-item" href="https://diariodelhuila.com" target="_blank">El diario del huila</a></li>
+          </ul>
+        </li>
+    </div>
+    <div>
+        <h3>INTERNACIONALES</h3>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">EE.UU</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.nytimes.com/international/" target="_blank">The new york times</a></li>
+            <li><a class="dropdown-item" href="https://www.latimes.com/" target="_blank">Los angeles times</a></li>
+          </ul>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Argentina</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.lanacion.com.ar/" target="_blank">La nacion</a></li>
+            <li><a class="dropdown-item" href="https://www.clarin.com/" target="_blank">El clarin</a></li>
+          </ul>
+        </li>
+    </div>
+</div>
+</body>
+</html>
